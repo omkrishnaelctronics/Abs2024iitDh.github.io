@@ -1376,6 +1376,58 @@ section,
 </style>
 
 /*--------------------------------------------------------------
+# Work Experience
+--------------------------------------------------------------*/
+
+<style>
+.experience-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+  border-left: 4px solid #1d3557;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.exp-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #1d3557;
+  font-weight: 600;
+}
+
+.exp-header span {
+  font-size: 13px;
+  color: #666;
+}
+
+.exp-role {
+  margin-top: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #457b9d;
+}
+
+.exp-list {
+  margin-top: 14px;
+  padding-left: 20px;
+  line-height: 1.7;
+  font-size: 14.5px;
+}
+
+.exp-list li {
+  margin-bottom: 8px;
+}
+</style>
+
+
+/*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
