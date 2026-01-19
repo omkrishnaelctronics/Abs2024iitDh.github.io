@@ -139,6 +139,63 @@ h6 {
   }
 }
 
+
+/*--------------------------------------------------------------
+# resume tabs
+--------------------------------------------------------------*/
+<style>
+.resume-card {
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  color: #ffffff;
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 16px;
+  max-width: 520px;
+  margin: auto;
+  box-shadow: 0 16px 36px rgba(0,0,0,0.25);
+}
+
+.resume-card i {
+  font-size: 48px;
+  margin-bottom: 14px;
+}
+
+.resume-card h3 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.resume-card p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 22px;
+}
+
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 30px;
+  background: #e63946;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: #f77f00;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.3);
+}
+</style>
+
+
+
+
+
 /*--------------------------------------------------------------
 # navigation tabs
 --------------------------------------------------------------*/
