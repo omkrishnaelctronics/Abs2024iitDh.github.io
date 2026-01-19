@@ -139,6 +139,84 @@ h6 {
   }
 }
 
+/*--------------------------------------------------------------
+# experiences tab
+--------------------------------------------------------------*/
+
+<style>
+.experience-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px 30px;
+  margin-bottom: 28px;
+  box-shadow: 0 14px 32px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 42px rgba(0,0,0,0.12);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.exp-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.exp-header span {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.exp-role {
+  font-weight: 500;
+  color: #1d3557;
+  margin: 10px 0 14px;
+}
+
+.exp-dropdown summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: #457b9d;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+}
+
+.exp-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.exp-dropdown[open] summary i {
+  transform: rotate(180deg);
+}
+
+.exp-dropdown summary i {
+  transition: transform 0.3s ease;
+}
+
+.exp-list {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+.exp-list li {
+  margin-bottom: 8px;
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+</style>
+
 
 /*--------------------------------------------------------------
 # resume tabs
