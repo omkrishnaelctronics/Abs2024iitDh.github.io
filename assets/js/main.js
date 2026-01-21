@@ -204,64 +204,6 @@
     }
   });
 
-  /**
-   * Animation on scroll function and init2
-   */
-  
-(function () {
-  "use strict";
-
-  const menuBtn = document.getElementById("menuBtn");
-  const sidebar = document.getElementById("sidebar");
-  const navLinks = document.querySelectorAll(".navmenu a");
-  const sections = document.querySelectorAll("main section");
-
-  /* Sidebar toggle */
-  menuBtn.addEventListener("click", () => {
-    sidebar.classList.toggle("show");
-    menuBtn.querySelector("i").classList.toggle("bi-x");
-    menuBtn.querySelector("i").classList.toggle("bi-list");
-  });
-
-  /* Dynamic tab switching */
-  navLinks.forEach(link => {
-    link.addEventListener("click", e => {
-      e.preventDefault();
-
-      const targetId = link.dataset.section;
-      const targetSection = document.getElementById(targetId);
-
-      // Active nav
-      navLinks.forEach(l => l.classList.remove("active"));
-      link.classList.add("active");
-
-      // Hide all sections
-      sections.forEach(sec => sec.classList.remove("active-section"));
-
-      // Show selected section
-      targetSection.classList.add("active-section");
-
-      // Smooth scroll
-      window.scrollTo({
-        top: targetSection.offsetTop - 40,
-        behavior: "smooth"
-      });
-
-      sidebar.classList.remove("show");
-      menuBtn.querySelector("i").classList.add("bi-list");
-      menuBtn.querySelector("i").classList.remove("bi-x");
-    });
-  });
-
-  /* Reveal first section */
-  window.addEventListener("load", () => {
-    const first = document.querySelector("main section");
-    if (first) first.classList.add("active-section");
-  });
-
-})();
-
-
   
   /**
    * Navmenu Scrollspy
